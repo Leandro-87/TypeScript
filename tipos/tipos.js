@@ -27,7 +27,23 @@ let hobbies = [1, 2, 3, 4, 5, 6];
 hobbies = ['Academia', 'Video-game', 'Musica'];
 console.log(hobbies);
 console.log(typeof hobbies);
-//TUPLA
+// TUPLA
 let endereco = ["Alameda das Ortencias", 'Vista Alegra', 5.87];
-endereco = ['Luiz Bonetti', 'Perdizes', 7.25];
 console.log(endereco);
+endereco = ['Luiz Bonetti', 'Perdizes 2', 7.25];
+console.log(endereco);
+// ENUMS
+var Cor;
+(function (Cor) {
+    Cor[Cor["verde"] = 0] = "verde";
+    Cor[Cor["branco"] = 1] = "branco";
+    Cor[Cor["vermelho"] = 100] = "vermelho";
+})(Cor || (Cor = {}));
+console.log(Cor);
+console.log(Cor[0], Cor.branco, Cor[100]);
+// Any
+let carro = 'BMW';
+console.log(carro);
+carro = { marca: 'BMW', ano: 2021, cor: 'Branco' };
+console.log(carro);
+console.log(carro.cor);
